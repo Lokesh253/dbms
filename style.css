@@ -6,11 +6,19 @@
 }
 body
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     min-height: 100vh;
     background: #ac53ec;
+}
+
+h1{
+    font-size: xx-large;
+    font-size: 150px;
+    font-family: monospace;
+    color: #fff;
+    position: absolute;
+    top: 260px;
+    left: 300px;
 }
 .card
 {
@@ -35,3 +43,45 @@ body
 .card:hover::before{
     transform: translate(40px,-40px);
 }
+.one .card{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.two .card{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+.three .card{
+    position: absolute;
+    bottom: -150px;
+    left : 150px;
+}
+.four .card{
+    position: absolute;
+    top: -150px;
+    right : 300px;
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
+    transform: rotate(55deg);
+}
+.five .card{
+    position: absolute;
+    top: 450px;
+    right : 450px;
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -o-transform: rotate(-18-deg);
+    transform: rotate(-18deg);
+}
+
