@@ -1,0 +1,117 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+footer::before {
+    display: block;
+    content: "";
+    height: 350px;
+}
+
+
+.disabled-link {
+    /* text-decoration: none;
+    color: var(--black); */
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+
+.popup-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.popup-logos .logo {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    /* box-shadow: 2px 6px 14px 3px var(--black); */
+    cursor: pointer;
+
+    /* transition: property duration timing-function delay|initial|inherit; */
+    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.popup-logos .icon-name {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background-color: var(--white);
+    color: var(--white);
+    padding: 5px 8px;
+    
+    /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+    /* box-shadow: 0 10px 10px rgba(0,0,0,0.1); */
+    
+    opacity: 0;
+    pointer-events: none;
+
+    /* transition: property duration timing-function delay|initial|inherit; */
+    transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+
+}
+
+.popup-logos .icon-name::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: var(--black);
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all .3s cubic-bezier(0.68,-0.55,0.265.1.55);
+}
+
+.popup-logos .instagram:hover,
+.popup-logos .instagram:hover .icon-name,
+.popup-logos .instagram:hover .icon-name::before {
+    background-color: #e1306c;
+    color: var(--white);
+}
+
+.popup-logos .youtube:hover,
+.popup-logos .youtube:hover .icon-name,
+.popup-logos .youtube:hover .icon-name::before {
+    background-color: tomato;
+    color: var(--white);
+}
+
+.popup-logos .blue-logo:hover,
+.popup-logos .blue-logo:hover .icon-name,
+.popup-logos .blue-logo:hover .icon-name::before {
+    background-color: #0088cc;
+    color: var(--white);
+}
+
+.popup-logos .logo:hover .icon-name {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
+
+
+
+
