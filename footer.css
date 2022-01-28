@@ -4,6 +4,36 @@
 }
 
 
+nav::before{
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    input:checked ~ #menu-sm{
+        display: none;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+
+    #menu-lg {
+        display: none;
+    }
+}
+
+
+
+
+
+
 footer::before {
     display: block;
     content: "";
@@ -91,7 +121,7 @@ footer::before {
 .popup-logos .youtube:hover,
 .popup-logos .youtube:hover .icon-name,
 .popup-logos .youtube:hover .icon-name::before {
-    background-color: tomato;
+    background-color: red;
     color: var(--white);
 }
 
