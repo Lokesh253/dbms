@@ -4,6 +4,74 @@
 }
 
 
+nav::before{
+    display: block;
+    content: "";
+    height: 10px;
+}
+
+nav {
+    background-color: var(--black);
+    padding: 7px;
+}
+
+.navbar-brand {
+   font-size: 40px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+@media screen and (max-width: 800px) {
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    input:checked ~ #menu-sm{
+        display: none;
+    }
+
+    .barMenu {
+        color: red;
+        float: right;
+    }
+
+    #menu-lg {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    .bars-menu {
+        display: none;
+    }
+
+    #menu-sm {
+        display: none;
+    }
+
+    #menu-lg {
+        display: inline;
+        float: right;
+        font-size: 20px;
+    }
+
+    #menu-lg a {
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+
+
+
+
 footer::before {
     display: block;
     content: "";
@@ -91,7 +159,7 @@ footer::before {
 .popup-logos .youtube:hover,
 .popup-logos .youtube:hover .icon-name,
 .popup-logos .youtube:hover .icon-name::before {
-    background-color: tomato;
+    background-color: red;
     color: var(--white);
 }
 
